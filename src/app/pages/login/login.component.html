@@ -1,0 +1,27 @@
+<!-- FORMULAIRE DE CONNEXION -->
+<div class="parent">
+    <div class="card">
+        <h2>Admin Paneli Giriş</h2>
+
+        <!-- SE CONNECTER / S'INSCRIRE -->
+
+
+        <!-- FORMULAIRE -->
+        <form class="form">
+            <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email Adress" class="email">
+            <input type="password" name="password" [(ngModel)]=" loginObj.password" placeholder="password" class="pass">
+            <div *ngIf="isLoading" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </form>
+
+        <!-- MOT DE PASSE OUBLIE ? -->
+
+
+        <!-- BOUTTON LOGIN -->
+        <button type="button" (click)="onLogin()" class="login_btn">Giriş Yap</button>
+
+
+    </div>
+
+</div>
